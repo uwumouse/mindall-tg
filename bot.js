@@ -66,6 +66,7 @@ bot.on("message", (ctx) => {
 bot.launch({
     webhook: {
         domain: process.env.WEBHOOK_DOMAIN,
-        port: 5000
+        port: 5000,
+        port: process.env.PORT
     }
 }).then(() => console.log("Bot Started."));
